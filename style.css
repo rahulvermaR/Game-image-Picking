@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  height: 100vh;
+
+  background-image: linear-gradient(5deg, #b16d57, #fff55f, #8ee510);
+}
+section {
+  margin: 0 auto;
+  width: 60rem;
+  border: 3px solid blue;
+  box-shadow: 0 0 13px 0 blue;
+  border-radius: 12px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header {
+  padding: 10px;
+  border-bottom: 2px solid #222;
+  background-color: #ffecef;
+}
+.top-header-box {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  text-align: center;
+}
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.score-box {
+  border-radius: 9px;
+  margin: 0 auto;
+  background-color: #e3d7fa;
+}
+
+.score-text {
+  padding: 3px 40px;
+  font-size: 2.4rem;
+}
+#score {
+  align-self: left;
+  font-size: 3.2rem;
+}
+.timer-box {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+#time-left {
+  display: inline-block;
+}
+main {
+  background-color: #eee;
+  padding: 30px;
+}
+.grid-container {
+  background-color: #ddd;
+  width: 40rem;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  border-collapse: collapse;
+  gap: 0;
+
+  border: 1px solid red;
+  border-radius: 9px;
+}
+.box {
+  cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+  border-collapse: collapse;
+  border-radius: 50%;
+}
+.mole {
+  background-image: url(./gameimg.webp);
+  background-size: cover;
+  opacity: 0.9;
+}
+.btn-box {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 2.4rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #ddd;
+  color: #333;
+  border: 2px solid #43419b;
+}
+
+@media (max-width: 650px) {
+  section {
+    width: 40rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  #score {
+    font-size: 2.4rem;
+  }
+  .grid-container {
+    width: 33rem;
+  }
+  .box {
+    width: 11rem;
+    height: 11rem;
+  }
+  button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    width: 25rem;
+  }
+  .grid-container {
+    width: 21rem;
+  }
+  h1 {
+    padding-bottom: 10px;
+  }
+  .top-header-box {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+  main {
+    padding: 30px 10px 30px 10px;
+  }
+  .box {
+    width: 7rem;
+    height: 7rem;
+  }
+  button {
+    padding: 6px 12px;
+    font-size: 1.8rem;
+  }
+}
